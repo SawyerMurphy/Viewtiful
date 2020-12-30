@@ -1,6 +1,34 @@
-h1 {
+/*h1 {
     text-align: center ;
+}*/
+
+html, body {
+    width: 100% ;
+    height: 100% ;
+    margin: 0 ;
+    padding: 0 ;
 }
-body {
-    text-align : center ;
+
+introduction {
+    position: fixed ;
+    left: 44.5% ;
+    top: 6% ;
+}
+
+.showWhenLoaded {
+    position: fixed ;
+    top: 50% ;
+    left: 47% ;
+    transform: translate(-50%, -50%) ;
+    transform: scale(0, 0) ;
+    animation: h1ScaleAndCenter 3s forwards ;
+}
+
+@keyframes h1ScaleAndCenter {
+    50% {
+        transform: scale(1, 1) ;
+    }
+    100% {
+        transform: translateY(-1275%) ;
+    }
 }
